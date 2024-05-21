@@ -10,6 +10,6 @@
         Course: "Terraform"
       ansible.builtin.debug:
         msg: "Hello we are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}"
-  - name: print information
-    ansible.builtin.debug:
+    - name: print information
+      ansible.builtin.debug:
         msg: "Hello we are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}"

@@ -1,13 +1,13 @@
 - name: variables from files
   hosts: localhost
   vars_files:
-    - vars.yaml 
+    - vars.yaml
   tasks: #list of tasks
     - name: print override information
       vars:
         Course: "Terraform"
       ansible.builtin.debug:
         msg: "Hello we are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}"
-  - name: print information
-    ansible.builtin.debug:
+    - name: print information
+      ansible.builtin.debug:
         msg: "Hello we are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}"
