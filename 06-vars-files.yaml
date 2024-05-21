@@ -1,9 +1,7 @@
-- name: variables
+- name: variables from files
   hosts: localhost
-  vars:
-    Course: "Ansible"
-    Trainer: "Sivakumar"
-    Duration: "120hrs"
+  vars_files:
+    - vars.yaml 
   tasks: #list of tasks
     - name: print override information
       vars:
