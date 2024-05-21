@@ -10,4 +10,4 @@
   tasks: #list of tasks
     - name: print override information
       ansible.builtin.debug:
-        msg: "Hi, Username:{{USERNAME}, Password is{{PASSWORD}}"
+        msg: "Hi, Username:{{USERNAME}, Password is{{PASSWORD}} "
