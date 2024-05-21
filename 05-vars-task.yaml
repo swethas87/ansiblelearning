@@ -7,6 +7,6 @@
   tasks: #list of tasks
     - name: print information
       vars:
-      Course: "Terraform"
+        Course: "Terraform"
       ansible.builtin.debug:
         msg: "Hello we are learning {{Course}} from Traner {{Trainer}}, Duration is {{Duration}}"
