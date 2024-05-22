@@ -1,0 +1,6 @@
+- name: variables from files
+  hosts: localhost
+  tasks: #list of tasks
+    - name: get value from args
+      ansible.builtin.debug:
+        msg: "Hello, {{PERSON}}, GoodMorning"
