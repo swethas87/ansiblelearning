@@ -10,5 +10,6 @@
       private: false
   tasks: #list of tasks
     - name: get value from args
+      WISHES: "value from task"
       ansible.builtin.debug:
         msg: "Hello, Good {{WISHES}}"
