@@ -1,10 +1,10 @@
-- name: variables from files
+- name: variables preference
   hosts: localhost
   vars:
     WISHES: "Morning from PLAY variable"
   vars_file:
     - vars.yaml
-  var_prompt:
+  vars_prompt:
     - name: WISHES
       prompt: Please enter Wishes
       private: false
