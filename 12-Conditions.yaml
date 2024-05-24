@@ -1,10 +1,10 @@
--name: conditions
-hosts: web
-become: yes
-tasks:
-  - name: check if user exists or not
-    ansible.builtin.command: id expense
+- name: conditions
+  hosts: web
+  become: yes
+  tasks:
+    - name: check if user exists or not
+      ansible.builtin.command: id expense
 
-  - name: say hello
-    ansible.builtin.debug:
-      msg: "Hello"
+     - name: say hello
+       ansible.builtin.debug:
+        msg: "Hello"
