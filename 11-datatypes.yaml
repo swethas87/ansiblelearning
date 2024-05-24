@@ -1,0 +1,17 @@
+- name: variables from files
+  hosts: localhost
+  vars:
+    Course: Devops with AWS #string
+    Tools: #list
+      - Linux
+      - Shell
+      - Ansible
+    Experience: #map
+      Devops: 3 #number
+      AWS: 2
+      Docker: 1
+    RealProject: true #boolean
+  tasks: #list of tasks
+    - name: print variables
+      ansible.builtin.debug:
+        msg: "Hello, {{Course}}, Tools covered: {{Tools}}, Experience is {{Experience}}, Real Project is {{RealProject}}"
