@@ -8,8 +8,8 @@
       ignore_errors: true
     - name: print user information
       ansible.builtin.debug: 
-        msg: {{USER}}
+        msg: "User info {{USER}} ""
     - name: say hello
       ansible.builtin.debug:
         msg: "Hello"
-        msg: {{USER}}
+        msg: "User info {{USER}} ""
