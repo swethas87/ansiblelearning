@@ -60,7 +60,7 @@
   vars:
     my_list: #this is called as list
       - { "key": "course", "value": "Ansible" }
-      - { "key": "course", "value": "Ansible" }
+      - { "key": "Trainer", "value": "Sivakumar" }
       - { "key": "Duration", "value": "120hrs" }
   tasks:
     - name: before converting mydict
