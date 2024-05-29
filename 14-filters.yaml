@@ -68,4 +68,4 @@
         msg: "Before converting: {{my_list}}"
     - name: after converting mydict
       ansible.builtin.debug:
-        msg: "After converting: {{my_dict | items2dict}}"
+        msg: "After converting: {{my_list | items2dict}}"
